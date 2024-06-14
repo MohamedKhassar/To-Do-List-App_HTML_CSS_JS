@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-card">
+            <div class="heading">
+                <h1>Todo List</h1>
+                <img src="images/to-do-list.png" alt="">
+            </div>
+            <div class="todo-list">
+                
+            </div>
+            <div class="add-task"  onclick="togglePopUp()">
+                <button>
+                    <img src="images/circle-plus.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-card">
+                <h1 class="popup-title">add new task</h1>
+                <form class="form-popup" >
+                    <input type="text" placeholder="Add Task" class="input-value">
+                    <button class="add-btn"><img src="images/circle-plus.svg" alt=""></button>
+                </form>
+                <div class="cancel-section"  onclick="togglePopUp()">
+                    <button  class="cancel-btn" ><img src="images/circle-x.svg" alt=""></button>
+                    <p class="error">
+                        <img src="images/circle-alert.svg" alt="">
+                        <span>Please enter a valid task</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
